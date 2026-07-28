@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Oudrhiri Younes | Cabinet Dentaire d'Excellence à Fès</title>
+    <meta name="description" content="Cabinet dentaire haut de gamme à Fès. Avenue Bir Anzarane. Expertise en implantologie, orthodontie et esthétique dentaire par le Dr Oudrhiri Younes.">
+    
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        midnight: '#0f172a',
+                        medical: '#0891b2',
+                        stone: '#f8fafc',
+                        emerald: {
+                            50: '#ecfdf5',
+                            200: '#a7f3d0',
+                            700: '#047857'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #ffffff;
+        }
+
+        /* Thin minimalist borders */
+        .border-fine {
+            border: 1px solid #e2e8f0;
+        }
+        .border-b-fine {
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .border-t-fine {
+            border-top: 1px solid #e2e8f0;
+        }
+        .border-r-fine {
+            border-right: 1px solid #e2e8f0;
+        }
+
+        /* Sleek scrollbar for calendar */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .fade-in {
+            animation: fadeIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        .delay-1 { animation-delay: 0.15s; }
+        .delay-2 { animation-delay: 0.3s; }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hover-subtle {
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        .hover-subtle:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased overflow-x-hidden selection:bg-medical selection:text-white">
+
+    <!-- Navigation -->
+    <header class="w-full bg-white border-b-fine z-50 fixed top-0" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="#" class="text-xl font-medium text-midnight tracking-wide flex items-center gap-3">
+                <svg class="w-6 h-6 stroke-1 text-midnight" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="square" stroke-linejoin="miter" d="M19.5 8.25l-7.5 3.75-7.5-3.75a3 3 0 014.25-2.61L12 6.75l3.25-1.11a3 3 0 014.25 2.61z"></path>
+                    <path stroke-linecap="square" stroke-linejoin="miter" d="M12 12.75v10.5M19.5 8.25v10.5a3 3 0 01-4.25 2.61L12 19.5l-3.25 1.86a3 3 0 01-4.25-2.61V8.25"></path>
+                </svg>
+                Dr Oudrhiri Younes
+            </a>
+            
+            <nav class="hidden md:flex gap-10 items-center text-sm tracking-wide text-slate-500">
+                <a href="#soins" class="hover:text-midnight transition-colors">Expertise</a>
+                <a href="#hygiene" class="hover:text-midnight transition-colors">Protocoles</a>
+                <a href="#rendez-vous" class="hover:text-midnight transition-colors">Contact</a>
+                <a href="#rendez-vous" class="px-6 py-2.5 bg-midnight text-white text-xs uppercase tracking-widest rounded-sm hover-subtle">
+                    Consultation
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Hero Section (Asymmetric) -->
+        <section class="max-w-7xl mx-auto px-6 py-24 lg:py-32">
+            <div class="grid lg:grid-cols-12 gap-16 items-center">
+                <div class="lg:col-span-5 fade-in">
+                    <p class="text-xs uppercase tracking-[0.2em] text-slate-400 mb-6">Clinique Dentaire • Fès</p>
+                    <h1 class="text-5xl lg:text-6xl font-light text-midnight leading-[1.1] mb-8 tracking-tight">
+                        Excellence<br>
+                        <span class="font-medium">médicale &<br>esthétique.</span>
+                    </h1>
+                    <p class="text-slate-500 mb-10 leading-relaxed font-light text-lg">
+                        Une approche sur-mesure de l'art dentaire. Des technologies de pointe au service de votre santé bucco-dentaire, dans un cadre serein et épuré.
+                    </p>
+                    <a href="#rendez-vous" class="inline-flex items-center gap-4 text-sm font-medium text-midnight group border-b border-midnight pb-1 hover-subtle">
+                        Découvrir le cabinet
+                        <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="lg:col-span-7 fade-in delay-1">
+                    <div class="aspect-[4/3] w-full relative overflow-hidden bg-stone border-fine p-2 rounded-sm">
+                        <img src="./assets/hero_clinic.png" alt="Cabinet Dr Oudrhiri Younes" class="w-full h-full object-cover rounded-sm filter contrast-[1.05] saturate-[0.95]">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise Section (Line-based, Asymmetric) -->
+        <section id="soins" class="border-t-fine border-b-fine bg-stone">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid lg:grid-cols-12">
+                    <div class="lg:col-span-4 py-20 lg:pr-12 lg:border-r-fine">
+                        <h2 class="text-3xl font-light text-midnight mb-6 tracking-tight">Notre Expertise</h2>
+                        <p class="text-slate-500 font-light leading-relaxed">
+                            Chaque sourire est unique. Nous déployons des protocoles cliniques rigoureux pour restaurer la fonction et sublimer l'esthétique dentaire.
+                        </p>
+                    </div>
+                    
+                    <div class="lg:col-span-8 flex flex-col">
+                        <!-- Item 1 -->
+                        <div class="grid md:grid-cols-3 py-12 border-b-fine group hover:bg-white transition-colors duration-500 px-6 lg:px-12 -mx-6 lg:mx-0">
+                            <div class="mb-4 md:mb-0">
+                                <svg class="w-6 h-6 stroke-1 text-slate-400 group-hover:text-midnight transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                            </div>
+                            <div class="md:col-span-2">
+                                <h3 class="text-xl font-medium text-midnight mb-3">Implantologie</h3>
+                                <p class="text-slate-500 font-light text-sm leading-relaxed">Reconstruction prothétique sur implants biocompatibles. Une solution pérenne, fonctionnelle et parfaitement intégrée.</p>
+                            </div>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="grid md:grid-cols-3 py-12 border-b-fine group hover:bg-white transition-colors duration-500 px-6 lg:px-12 -mx-6 lg:mx-0">
+                            <div class="mb-4 md:mb-0">
+                                <svg class="w-6 h-6 stroke-1 text-slate-400 group-hover:text-midnight transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </div>
+                            <div class="md:col-span-2">
+                                <h3 class="text-xl font-medium text-midnight mb-3">Orthodontie</h3>
+                                <p class="text-slate-500 font-light text-sm leading-relaxed">Correction de l'alignement dentaire par approches invisibles (gouttières) ou conventionnelles, alliant confort et discrétion.</p>
+                            </div>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="grid md:grid-cols-3 py-12 border-b-fine group hover:bg-white transition-colors duration-500 px-6 lg:px-12 -mx-6 lg:mx-0">
+                            <div class="mb-4 md:mb-0">
+                                <svg class="w-6 h-6 stroke-1 text-slate-400 group-hover:text-midnight transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                            </div>
+                            <div class="md:col-span-2">
+                                <h3 class="text-xl font-medium text-midnight mb-3">Esthétique Dentaire</h3>
+                                <p class="text-slate-500 font-light text-sm leading-relaxed">Facettes céramiques ultra-fines et protocoles de blanchiment clinique pour une harmonie parfaite du sourire.</p>
+                            </div>
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="grid md:grid-cols-3 py-12 group hover:bg-white transition-colors duration-500 px-6 lg:px-12 -mx-6 lg:mx-0">
+                            <div class="mb-4 md:mb-0">
+                                <svg class="w-6 h-6 stroke-1 text-slate-400 group-hover:text-midnight transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                            </div>
+                            <div class="md:col-span-2">
+                                <h3 class="text-xl font-medium text-midnight mb-3">Prévention</h3>
+                                <p class="text-slate-500 font-light text-sm leading-relaxed">Prophylaxie, bilans parodontaux et imagerie préventive pour assurer la longévité de votre santé dentaire.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hygiène (Textual List, Minimalist) -->
+        <section id="hygiene" class="py-24 max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+                <div>
+                    <h2 class="text-3xl font-light text-midnight mb-6 tracking-tight">Sécurité Sanitaire</h2>
+                    <p class="text-slate-500 font-light leading-relaxed mb-8">
+                        L'asepsie est le fondement de notre pratique. Le cabinet dispose d'une chaîne de stérilisation de classe B, garantissant une sécurité absolue à chaque intervention.
+                    </p>
+                </div>
+                
+                <ul class="space-y-6 pt-2">
+                    <li class="flex items-baseline gap-4">
+                        <span class="w-1.5 h-1.5 bg-midnight rounded-full flex-shrink-0"></span>
+                        <p class="text-slate-700 font-light">Traçabilité informatique stricte de l'instrumentation stérilisée.</p>
+                    </li>
+                    <li class="flex items-baseline gap-4">
+                        <span class="w-1.5 h-1.5 bg-midnight rounded-full flex-shrink-0"></span>
+                        <p class="text-slate-700 font-light">Matériel à usage unique systématique pour chaque patient.</p>
+                    </li>
+                    <li class="flex items-baseline gap-4">
+                        <span class="w-1.5 h-1.5 bg-midnight rounded-full flex-shrink-0"></span>
+                        <p class="text-slate-700 font-light">Protocoles de désinfection clinique entre chaque rendez-vous.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Réservation Section (Bespoke Redesign) -->
+        <section id="rendez-vous" class="border-t-fine bg-white py-24">
+            <div class="max-w-4xl mx-auto px-6">
+                
+                <div class="mb-12 border-b-fine pb-8">
+                    <p class="text-xs uppercase tracking-[0.2em] text-slate-400 mb-4">Consultation</p>
+                    <h2 class="text-3xl font-light text-midnight mb-4 tracking-tight">Demande de Rendez-vous</h2>
+                    <p class="text-slate-500 font-light text-sm">Avenue Bir Anzarane, Résidence Noujoum. Veuillez sélectionner vos disponibilités.</p>
+                </div>
+                
+                <div class="space-y-12">
+                    <!-- Date Slider -->
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <h3 class="text-sm font-medium uppercase tracking-wider text-midnight">Sélectionnez un Jour</h3>
+                            <div class="flex gap-2">
+                                <button id="scroll-left" class="p-2 border-fine rounded-sm hover-subtle text-slate-400 hover:text-midnight">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-width="1.5" d="M15 19l-7-7 7-7"></path></svg>
+                                </button>
+                                <button id="scroll-right" class="p-2 border-fine rounded-sm hover-subtle text-slate-400 hover:text-midnight">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-width="1.5" d="M9 5l7 7-7 7"></path></svg>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Horizontal Slider Container -->
+                        <div class="flex overflow-x-auto gap-3 hide-scrollbar snap-x scroll-smooth pb-4" id="calendar-slider">
+                            <!-- JS generated day bars -->
+                        </div>
+                    </div>
+
+                    <!-- Time Pills -->
+                    <div class="opacity-30 transition-opacity duration-500 pointer-events-none" id="time-section">
+                        <h3 class="text-sm font-medium uppercase tracking-wider text-midnight mb-6">Sélectionnez un Horaire</h3>
+                        <div class="flex flex-wrap gap-3" id="time-pills">
+                            <button class="time-btn px-6 py-2 border-fine rounded-full text-sm text-slate-500 hover:border-slate-400 transition-colors bg-white">09:00</button>
+                            <button class="time-btn px-6 py-2 border-fine rounded-full text-sm text-slate-500 hover:border-slate-400 transition-colors bg-white">10:30</button>
+                            <button class="time-btn px-6 py-2 border-fine rounded-full text-sm text-slate-500 hover:border-slate-400 transition-colors bg-white">15:00</button>
+                            <button class="time-btn px-6 py-2 border-fine rounded-full text-sm text-slate-500 hover:border-slate-400 transition-colors bg-white">16:30</button>
+                        </div>
+                    </div>
+
+                    <!-- Confirmation Button & Micro text -->
+                    <div class="pt-8 border-t-fine flex flex-col sm:flex-row gap-6 justify-between items-center">
+                        <p class="text-xs text-slate-400 font-light max-w-sm leading-relaxed">
+                            Cabinet équipé de technologies d'imagerie numérique de pointe.<br>Stationnement disponible à proximité de la Résidence Noujoum.
+                        </p>
+                        <button id="confirm-btn" class="w-full sm:w-auto px-8 py-3.5 bg-midnight text-white text-sm font-medium rounded-sm opacity-50 cursor-not-allowed transition-opacity duration-300" disabled>
+                            Confirmer la demande
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="border-t-fine bg-stone pt-16 pb-8">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid md:grid-cols-3 gap-12 mb-16">
+                    <div>
+                        <div class="text-lg font-medium text-midnight tracking-wide flex items-center gap-2 mb-6">
+                            Dr Oudrhiri Younes
+                        </div>
+                        <p class="text-slate-500 text-sm font-light leading-relaxed">
+                            Excellence dentaire à Fès.<br>
+                            Un accompagnement sur-mesure pour votre santé et l'esthétique de votre sourire.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xs uppercase tracking-widest text-midnight mb-6 font-medium">Coordonnées</h4>
+                        <ul class="space-y-3 text-sm text-slate-500 font-light">
+                            <li>Avenue Bir Anzarane</li>
+                            <li>Résidence Noujoum, Imm N°7</li>
+                            <li>3ème étage, Fès</li>
+                            <li class="pt-2 text-midnight">Consultation sur rendez-vous</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xs uppercase tracking-widest text-midnight mb-6 font-medium">Ouverture</h4>
+                        <ul class="space-y-3 text-sm text-slate-500 font-light">
+                            <li class="flex justify-between border-b-fine pb-1">
+                                <span>Lun - Ven</span>
+                                <span class="text-midnight">09:00 - 19:00</span>
+                            </li>
+                            <li class="flex justify-between border-b-fine pb-1">
+                                <span>Samedi</span>
+                                <span class="text-midnight">09:00 - 13:00</span>
+                            </li>
+                            <li class="flex justify-between pb-1">
+                                <span>Dimanche</span>
+                                <span>Fermé</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="border-t-fine pt-8 flex flex-col md:flex-row justify-between text-xs text-slate-400 font-light">
+                    <p>&copy; 2026 Cabinet Dentaire Dr Oudrhiri Younes.</p>
+                    <p class="mt-2 md:mt-0">Design Exclusif.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Sleek Toast Notification -->
+    <div id="toast" class="fixed bottom-8 right-8 max-w-sm bg-midnight text-white p-6 rounded-sm shadow-2xl transform translate-y-32 opacity-0 transition-all duration-500 z-50 pointer-events-none">
+        <div class="flex items-start gap-4">
+            <div class="text-emerald-400 mt-0.5">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            </div>
+            <div>
+                <h4 class="font-medium text-sm mb-1 tracking-wide">Demande enregistrée</h4>
+                <p class="text-xs text-slate-400 font-light leading-relaxed">Le secrétariat vous contactera par téléphone sous 10 minutes pour finaliser votre horaire.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Navbar Scrolled Effect
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 20) {
+                    navbar.classList.add('shadow-sm');
+                } else {
+                    navbar.classList.remove('shadow-sm');
+                }
+            });
+
+            // Intersection Observer for fade-in
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                        entry.target.style.opacity = '1';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section h2, section p.leading-relaxed').forEach(el => {
+                if(!el.classList.contains('fade-in')) {
+                    el.style.opacity = '0';
+                    observer.observe(el);
+                }
+            });
+
+            // Reservation Calendar Logic
+            const calendarSlider = document.getElementById('calendar-slider');
+            const timeSection = document.getElementById('time-section');
+            const timeBtns = document.querySelectorAll('.time-btn');
+            const confirmBtn = document.getElementById('confirm-btn');
+            const toast = document.getElementById('toast');
+            
+            let selectedDay = null;
+            let selectedTime = null;
+
+            const today = new Date();
+            const daysToGenerate = 14;
+            let d = new Date(today);
+
+            const joursSemaine = ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'];
+            const moisAnnee = ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Aoû', 'Sep', 'Oct', 'Nov', 'Déc'];
+
+            let count = 0;
+            while(count < daysToGenerate) {
+                if (d.getDay() !== 0) { // Exclude Sundays
+                    const btn = document.createElement('button');
+                    btn.className = 'day-btn snap-start shrink-0 w-20 py-4 border-fine rounded-sm flex flex-col items-center justify-center bg-white transition-colors duration-300';
+                    btn.dataset.date = d.toISOString();
+                    
+                    const dayName = joursSemaine[d.getDay()];
+                    const dayNum = d.getDate();
+                    const monthName = moisAnnee[d.getMonth()];
+
+                    btn.innerHTML = `
+                        <span class="text-[10px] uppercase tracking-widest text-slate-400 mb-1 font-medium day-name">${dayName}</span>
+                        <span class="text-xl font-light text-midnight day-num">${dayNum}</span>
+                        <span class="text-[10px] text-slate-400 day-month mt-1">${monthName}</span>
+                    `;
+
+                    btn.addEventListener('click', (e) => {
+                        // Reset
+                        document.querySelectorAll('.day-btn').forEach(b => {
+                            b.classList.remove('border-midnight', 'bg-stone');
+                            b.classList.add('border-fine', 'bg-white');
+                        });
+                        
+                        // Set Active (Minimalist styling: black border, subtle bg)
+                        const target = e.currentTarget;
+                        target.classList.remove('border-fine', 'bg-white');
+                        target.classList.add('border-midnight', 'bg-stone');
+
+                        selectedDay = target.dataset.date;
+                        
+                        // Enable time section
+                        timeSection.classList.remove('opacity-30', 'pointer-events-none');
+                        checkConfirm();
+                    });
+
+                    calendarSlider.appendChild(btn);
+                    count++;
+                }
+                d.setDate(d.getDate() + 1);
+            }
+
+            // Slider Scroll Buttons
+            document.getElementById('scroll-left').addEventListener('click', () => {
+                calendarSlider.scrollBy({ left: -150, behavior: 'smooth' });
+            });
+            document.getElementById('scroll-right').addEventListener('click', () => {
+                calendarSlider.scrollBy({ left: 150, behavior: 'smooth' });
+            });
+
+            // Time Pills Selection (Emerald style)
+            timeBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    if(!selectedDay) return;
+                    
+                    timeBtns.forEach(b => {
+                        b.classList.remove('bg-emerald-50', 'text-emerald-700', 'border-emerald-200');
+                        b.classList.add('bg-white', 'text-slate-500', 'border-fine');
+                    });
+                    
+                    const target = e.currentTarget;
+                    target.classList.remove('bg-white', 'text-slate-500', 'border-fine');
+                    target.classList.add('bg-emerald-50', 'text-emerald-700', 'border-emerald-200');
+                    
+                    selectedTime = target.textContent;
+                    checkConfirm();
+                });
+            });
+
+            function checkConfirm() {
+                if (selectedDay && selectedTime) {
+                    confirmBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+                    confirmBtn.classList.add('hover-subtle');
+                    confirmBtn.removeAttribute('disabled');
+                }
+            }
+
+            // Confirm Button
+            confirmBtn.addEventListener('click', () => {
+                if (!selectedDay || !selectedTime) return;
+                
+                // Show sleek toast
+                toast.classList.remove('translate-y-32', 'opacity-0');
+                
+                // Reset form visually
+                setTimeout(() => {
+                    selectedDay = null;
+                    selectedTime = null;
+                    
+                    document.querySelectorAll('.day-btn').forEach(b => {
+                        b.classList.remove('border-midnight', 'bg-stone');
+                        b.classList.add('border-fine', 'bg-white');
+                    });
+                    
+                    timeBtns.forEach(b => {
+                        b.classList.remove('bg-emerald-50', 'text-emerald-700', 'border-emerald-200');
+                        b.classList.add('bg-white', 'text-slate-500', 'border-fine');
+                    });
+                    
+                    timeSection.classList.add('opacity-30', 'pointer-events-none');
+                    
+                    confirmBtn.classList.add('opacity-50', 'cursor-not-allowed');
+                    confirmBtn.classList.remove('hover-subtle');
+                    confirmBtn.setAttribute('disabled', 'true');
+                }, 400);
+
+                // Hide toast after 5s
+                setTimeout(() => {
+                    toast.classList.add('translate-y-32', 'opacity-0');
+                }, 5000);
+            });
+        });
+    </script>
+</body>
+</html>
